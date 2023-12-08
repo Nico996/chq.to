@@ -1,0 +1,5 @@
+
+<center>
+	<h1>Bienvenido <%= current_user.username %></h1><%= link_to "Editar cuenta", edit_user_path(current_user) %>
+	<%= link_to "Borrar cuenta", current_user, data: { confirm: "¿Está seguro?" }, method: :delete %>
+</center>

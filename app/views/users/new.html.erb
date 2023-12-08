@@ -1,0 +1,18 @@
+<center>
+
+<h1>Registro</h1>
+
+<%= form_with model: @user, local: true do |f| %>
+  <label for="username">Nombre de Usuario</label><br>
+  <%= f.text_field :username, autofocus: true %><br>
+
+  <label for="password">Contraseña</label><br>
+  <%= f.password_field :password %><br>
+
+  <label for="mail">E-mail</label><br>
+  <%= f.password_field :mail %><br><br>
+
+  <%= f.submit "Confirmar" %>
+<% end %>
+
+</center>
